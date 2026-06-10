@@ -5,26 +5,26 @@
 class PindexLite < Formula
   desc "pindex (pure-Go, portable build — Apache-2.0, no MuPDF/cgo)"
   homepage "https://github.com/jjfantini/pindex"
-  version "0.1.1"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jjfantini/pindex/releases/download/v0.1.1/pindex-lite_0.1.1_darwin_arm64.tar.gz"
-      sha256 "3b0c015f91aadb5c17d3adf4bf410367a312f2957fe252fd83051f214f954fc1"
+      url "https://github.com/jjfantini/pindex/releases/download/v0.2.0/pindex-lite_0.2.0_darwin_arm64.tar.gz"
+      sha256 "33574631a59697843e204f21a97f4e7fbbc41040e3b8616fe6d1cccd1a9b4194"
     else
-      url "https://github.com/jjfantini/pindex/releases/download/v0.1.1/pindex-lite_0.1.1_darwin_amd64.tar.gz"
-      sha256 "2a2c1997a442c57c069d4facd9049329352f30ba530ab265f3483af55f193e1f"
+      url "https://github.com/jjfantini/pindex/releases/download/v0.2.0/pindex-lite_0.2.0_darwin_amd64.tar.gz"
+      sha256 "43703657797fd77ee16e23e1e2b983ae0b2185c312e421336cebd615923c192f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/jjfantini/pindex/releases/download/v0.1.1/pindex-lite_0.1.1_linux_arm64.tar.gz"
-      sha256 "4027da19bcd8c94b43b3017b3748113f192c1113fa0f35c0a15157ef2345213a"
+      url "https://github.com/jjfantini/pindex/releases/download/v0.2.0/pindex-lite_0.2.0_linux_arm64.tar.gz"
+      sha256 "2576a79059071ffc003ea7b568bd00480bec1d4f3b625fa1c9bf821429c5aaf1"
     else
-      url "https://github.com/jjfantini/pindex/releases/download/v0.1.1/pindex-lite_0.1.1_linux_amd64.tar.gz"
-      sha256 "b36747ba3688ced1f70b5edccb675269be3e7ba9f21d0ad89e87731384003de9"
+      url "https://github.com/jjfantini/pindex/releases/download/v0.2.0/pindex-lite_0.2.0_linux_amd64.tar.gz"
+      sha256 "09fb2cf2d2c367cab71f36ce3fd25fd43e4acb0f6d4d26f292da2dcc5ae69d08"
     end
   end
 
