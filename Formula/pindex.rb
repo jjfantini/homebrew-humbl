@@ -5,26 +5,26 @@
 class Pindex < Formula
   desc "Vectorless reasoning-RAG engine in Go — hierarchical tree index over PDFs, cited answers"
   homepage "https://github.com/jjfantini/pindex"
-  version "0.2.0"
+  version "0.3.0"
   license "AGPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jjfantini/pindex/releases/download/v0.2.0/pindex_0.2.0_darwin_arm64.tar.gz"
-      sha256 "a6f51ffb6857014a22f29499a031841fa88efd054be7ed74bd1ec9c59f64d771"
+      url "https://github.com/jjfantini/pindex/releases/download/v0.3.0/pindex_0.3.0_darwin_arm64.tar.gz"
+      sha256 "a18b3afa278425c3d537b54140158bc493ebe300a6a66103e9477dc6556f7180"
     else
-      url "https://github.com/jjfantini/pindex/releases/download/v0.2.0/pindex_0.2.0_darwin_amd64.tar.gz"
-      sha256 "54cbaa17d3d7f6e6c62478c75e4799d086fe59450acbaaf1527e11de2bff69e3"
+      url "https://github.com/jjfantini/pindex/releases/download/v0.3.0/pindex_0.3.0_darwin_amd64.tar.gz"
+      sha256 "9b3b5dd3ff67ff72f2061df8e4de7ecf88ec68b0a13ef762e81782c86028d091"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/jjfantini/pindex/releases/download/v0.2.0/pindex_0.2.0_linux_arm64.tar.gz"
-      sha256 "9737089d6018f2edcb208907f81dd29b3113fccb2a4f0d01ea9c996c34ad9c82"
+      url "https://github.com/jjfantini/pindex/releases/download/v0.3.0/pindex_0.3.0_linux_arm64.tar.gz"
+      sha256 "3131e32d3aef37b08d102c6aae99c20ca15460b84008ecd02403237b1a9ffaa7"
     else
-      url "https://github.com/jjfantini/pindex/releases/download/v0.2.0/pindex_0.2.0_linux_amd64.tar.gz"
-      sha256 "b594329c3ae88c4a1f533997714a07e9278fb64deaca0cc526ebeaeca15040f9"
+      url "https://github.com/jjfantini/pindex/releases/download/v0.3.0/pindex_0.3.0_linux_amd64.tar.gz"
+      sha256 "45fbfda1f2de930d11ed450fae9af21cbf766c53fbdabc4ca7d539a32c1ed23b"
     end
   end
 
