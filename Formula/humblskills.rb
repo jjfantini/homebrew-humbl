@@ -5,21 +5,21 @@
 class Humblskills < Formula
   desc "Install agentskills.io-format skills into Claude Code, Cursor, and friends."
   homepage "https://github.com/jjfantini/humblSKILLS"
-  version "2.22.0"
+  version "2.23.0"
   license "CC-BY-4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.22.0/humblskills_2.22.0_macos_amd64.tar.gz"
-      sha256 "e7965b8b9a66550e02e6cf67dad9f15e20d12d4e0ec06e80138be97d28f92064"
+      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.23.0/humblskills_2.23.0_macos_amd64.tar.gz"
+      sha256 "84136dbfa798c52bf2a49516881a3fe94a91597949fb9735ee41b1a943938431"
 
       define_method(:install) do
         bin.install "humblskills"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.22.0/humblskills_2.22.0_macos_arm64.tar.gz"
-      sha256 "6adc79aad8b435e8ca5d69f714d40d27078c7679b3cff55dfeb99c5d5d84ce26"
+      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.23.0/humblskills_2.23.0_macos_arm64.tar.gz"
+      sha256 "872dd88ea0e1fb56bae63d9785f4ec2430fb7f1427bd2d09d227e6546a88b5d0"
 
       define_method(:install) do
         bin.install "humblskills"
@@ -29,15 +29,15 @@ class Humblskills < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.22.0/humblskills_2.22.0_linux_amd64.tar.gz"
-      sha256 "565ed8d695f527d4313ab2a392a5f7d354471d20c5f2a454977827881a0a30f2"
+      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.23.0/humblskills_2.23.0_linux_amd64.tar.gz"
+      sha256 "2f11c2aa44c61790c7b8467dc476d91226b3d045659460d6d6026bb9b4234c6a"
       define_method(:install) do
         bin.install "humblskills"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.22.0/humblskills_2.22.0_linux_arm64.tar.gz"
-      sha256 "359fe8b6455051ba183f901442d281edb53ebb0e8693f6f6b3622f999c64898b"
+      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.23.0/humblskills_2.23.0_linux_arm64.tar.gz"
+      sha256 "1208aa629f3ad7d0c30a02c78ba01dcc0cfba8a87005eb8d37327e709b9f33bf"
       define_method(:install) do
         bin.install "humblskills"
       end
