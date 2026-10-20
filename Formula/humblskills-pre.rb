@@ -5,21 +5,21 @@
 class HumblskillsPre < Formula
   desc "Pre-release (develop) build of humblskills. Does not replace the stable formula."
   homepage "https://github.com/jjfantini/humblSKILLS"
-  version "2.55.1-pre"
+  version "2.56.0-pre"
   license "CC-BY-4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.55.1-pre/humblskills_2.55.1-pre_macos_amd64.tar.gz"
-      sha256 "011eb9642da24a36a9460a946b461e6635779f0264e7031cf6e5bd39a9148b8f"
+      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.56.0-pre/humblskills_2.56.0-pre_macos_amd64.tar.gz"
+      sha256 "f732932cfcd1d44d98a8bedd06ea44cf78319a91dd170f274a9b1acae9884aa7"
 
       define_method(:install) do
         bin.install "humblskills"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.55.1-pre/humblskills_2.55.1-pre_macos_arm64.tar.gz"
-      sha256 "3a61d172c4694939f9e50974b0603a5ae6ae1336c4d433a1efe6a1b035101afe"
+      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.56.0-pre/humblskills_2.56.0-pre_macos_arm64.tar.gz"
+      sha256 "bf1fb219c715a7741c829aed5d9d7e263b28e8c3b0175d3480ffbba497e9390f"
 
       define_method(:install) do
         bin.install "humblskills"
@@ -29,15 +29,15 @@ class HumblskillsPre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.55.1-pre/humblskills_2.55.1-pre_linux_amd64.tar.gz"
-      sha256 "466f492a32b43c2fe75070a3ce2b60720226cd426fd32a4139fa16d2fb6175be"
+      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.56.0-pre/humblskills_2.56.0-pre_linux_amd64.tar.gz"
+      sha256 "8a8ac9b0372e74c33999920ce0894dc83d5d059ea7fb40931a8dd6b0ec508562"
       define_method(:install) do
         bin.install "humblskills"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.55.1-pre/humblskills_2.55.1-pre_linux_arm64.tar.gz"
-      sha256 "90563a714d9c0e0768f926df4275ddd40a7dafa43b781ada3533b97a82d37866"
+      url "https://github.com/jjfantini/humblSKILLS/releases/download/v2.56.0-pre/humblskills_2.56.0-pre_linux_arm64.tar.gz"
+      sha256 "3bfeb31284ef55c144f3b5a37037372daef9f97d3f8fe8469e720eef15c0fc02"
       define_method(:install) do
         bin.install "humblskills"
       end
